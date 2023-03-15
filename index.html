@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-players - Home</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head> 
+
+    <body onload="alertinha()">
+        <header> <!--Cabeçalho (Logo e Menu)-->
+    <div class="container-grid posicionamento-header">
+       <a href=""><img class="logo" src="img/Camada 2.png" alt="Logo do Site"></a>  
+       <a href="#" onclick="mostrarmenu()"><img class="barrashamburguer"src="img/Barras.svg" alt="barras de acesso para o menu lateral"></a>        
+    <nav id="menu" class="menu">
+        <a href="">Inicio</a>
+        <a href="">Horário</a>
+        <a href="">Campeonato</a>
+        <a href="">Resultado</a>
+        <a href="">Noticias</a>
+    </nav>
+    </div>
+</header>
+     <main>
+        <div class="banner">
+            <div class="container-grid posicao-texto">   
+             <div class="texto-banner">
+                  <h1>Liga E-Players</h1>
+                  <p>O maior portal de campeonato</p>
+                  <a href="">Inscreva-se</a>
+          </div>
+           </div>
+            </div>
+          
+           <section class="section-jogos">
+           <div class="jogos">
+                      <a href=""> <img src="img/formula-1-logo-1-1 1.png" alt="Logo da formula um"></a>
+                      <a href=""> <img src="img/logo-lol-300x131 1.png" alt="Logo do legue of legendes lou"></a>
+                      <a href=""> <img src="img/Counter-Strike-Logo-Transparent-PNG 1.png" alt="Logo do Countri estraique"></a>
+                      <a href=""> <img src="img/valorant.png" alt="Logo do valoranti"></a>
+                      <a href=""> <img src="img/800px-FIFA_series_logo 1.png" alt="Logo do fifa"></a>
+          </div>
+          </section>
+          <section>
+            
+          </section>
+          <section class="section-sobre">
+              <div class="conteudo-sobre container">
+                  <div class="row">
+                  <div class="texto-sobre col">
+                      <h2>Como participar das ligas?</h2>  
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the .
+                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boook.</p>  
+                  </div>
+          
+                       <div class="container-imagem col">
+                       <img src="img/heroi lol.svg"  alt="Campeão do jogo lou"> 
+              </div>
+                 </div>
+               
+          
+          
+          
+      
+              </section>
+     </main>
+
+        
+        <footer><!-- final do site rodapé-->
+            <div class="container-rodape">
+                <div class="links-footer">
+                    <div class="links">
+                        <h2>Links Úteis</h2>
+                    <ul>
+                       <li><a href="#">Regras de utilização</a></li>
+                       <li><a href="#">Soporte</a></li>
+                       <li><a href="#">Central de ajuda</a></li>
+                       <li><a href="#">Contato</a></li>
+                        
+                    </ul>
+                    </div>
+
+                    <div class="links">
+                        <h2>Paginas</h2>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Campeonato</a></li>
+                        <li><a href="#">Resultados</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Login/Cadastro</a></li>
+                    </div>
+                    <img class="logo-footer" src="img/Camada 2.png" alt="logo">
+                    <div class="sociais">
+                        <h2>Faça parte do nosso clan, assine nossa newsletter!</h2>
+                        <!--antes de criar um botao(login/cadastro) como agora criar um formulario com o form -->
+                        <form action="">
+                        
+                        <input id="campo-email" type="e-mail" placeholder="E-mail">
+                        <!--input type para fazer a caixinha branca/ placeholder para aparecer palavra dentro da caixinha branca "umas dica pro usuario" no caso e email-->
+                        <button onclick="enviarEmail()" class="botão-cadastrar">Cadastrar</button>
+                        <!-- button se usa para criar botao dentro do form-->
+                    </for>
+                    </form>
+                    <div class="siga-nos">
+                        <h2>siga-nos</h2>
+                        <a href="#"><img src="img/instagram 1.svg" alt="logo instagran"></a>
+                        <a href="#"><img src="img/facebook 1.svg" alt="logo facebook"></a>
+                        <a href="#"><img src="img/youtube (1).svg" alt="logo do youtube"></a>
+                    </div>
+                    </div>
+               <!--Shift + alt+ setinha para baixo copia e cola pra baixo-->
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+    
+</html>

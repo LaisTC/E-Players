@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2? família= Roboto &family= Titillium+Web & display=swap');
+*
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #1E1C21;
+    height: 80px;
+}
+
+.menu{
+    width:660px ;   
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.banner {
+    height: 600px;
+    background-image: url(../img/ImagemBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.texto-banner{
+    color: white;
+ /*fonte*/font-family: 'Roboto', 'sans-serif';
+    font-size: 22px;
+/*centralizar palavra*/ text-align: center;
+}
+.posicao-texto{
+    justify-content: flex-end;
+}
+.texto-banner h1{
+    font-family:'Titillium Web', sans-serif ;
+    font-size: 70px;
+    font-weight:700;
+}
+.texto-banner a{
+    background-color: #C31616;
+    color: white;
+/*pra tirar a linha que ficou em baixo*/ text-decoration: none;
+/*faz as letas ficarem maiusculas*/ text-transform: uppercase;
+/*faz o tamanho do botão*/padding: 17px;
+/*faz as bordas do botão inscreva-se*/ border-radius: 6px;
+    font-family: 'Roboto' , 'sans-serif';
+    font-weight: bold;
+}
+.texto-banner p{
+    margin-bottom: 50px;
+    font-family: 'Roboto' , 'sans-serif';
+}
+.section-jogos{
+    background-color: black;
+ /*tamanho da barra onde estão os links dos jogos*/ height: 100px;
+}
+.jogos{
+    display: flex;
+    justify-content: space-between;
+  /*centralizar os links de jogos*/ align-items: center;
+height: 100px;
+}
+.section-sobre{
+    background-image: url(../img/Fundo.svg);
+    background-repeat: no-repeat;
+/*imagem caber inteira no fundo*/background-size: cover;
+}
+.texto-sobre {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.barrashamburguer{
+    display: none;
+    width: 38px;
+}
+.posicionamento-header{
+    position: relative;
+}
+
+footer{
+    background-color:#010101;
+    
+}
+
+.links{
+    color: white;
+}
+
+.sociais{
+    color: white;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    /*borda da area*/
+    }
+
+    .links-footer h2{
+font-size: 22px;
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+    }
+
+.logo-footer{
+    width: 300px;
+    height: 40px;
+}    
+
+
+/*para desktop*/
+@media screen and (max-width:1200px){
+    .container-grid{
+        width: 90;
+    }  
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        width: 200px;
+    }
+    } 
+
+/*quando a tela alcancar 780px some o menu aparece hamburguer (tablet)*/
+@media screen and (max-width:780px){
+    .menu{
+        display: none;
+   /*pra colocar em coluna*/ 
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+/*para nao deixar afetar o fundo na hora de clicar*/
+        position: absolute;
+/*para nao deixar as palavras subirem acima da barra de menu*/top:0;
+        right: 60;
+/*para deixar o fundo da cor da barrado menu*/
+        background-color: #1E1C21;
+       }
+    .barrashamburguer{
+        display: inline-block;
+        padding: 5px;
+    
+    }
+} 
+    
